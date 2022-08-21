@@ -9,21 +9,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hani-Rock</title>
     <link rel="shortcut icon" type="image" href="https://e7.pngegg.com/pngimages/581/127/png-clipart-earth-globe-world-computer-icons-asia-globe-sphere.png">
-</head>
+    <style>
+        .Right {
+            display: inline-block;
+            /* border: 2px solid red; */
+            position: absolute;
+            right: 60px;
+            top: 20px;
+        }
 
-<body style="background-color: rgb(254, 254, 254)">
-    <a href="home.html">
-        <h>Home</h3>
-            <br>
-    </a>
-    <a href="https://www.google.com/">Search Here</a> <br>
+        .Right img {
+            width: 90px;
+            padding-right: 60px;
+        }
+        .navbar {
+            background-color: black;
+            border-radius: 30px;
+            position: fixed;
+        }
 
-    <a href="about.html">About</a> <br>
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 13px 20px;
+        }
 
-    <a href="us.html">Contact us</a> <br>
+        .navbar ul {
+            overflow: auto;
+        }
 
-    <a href="contactus.html">Login</a>
+        .navbar li a {
+            padding: 3px 3px;
+            text-decoration: none;
+            color: white;
+        }
 
+        .navbar li a:hover {
+            color: red
+        }
+
+        .search {
+            float: right;
+            color: white;
+            padding: 12px 75px;
+        }
+
+        .navbar input {
+            border: 2px solid black;
+            border-radius: 14px;
+            padding: 3px 17px;
+            width: 129px;
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+    </style>
+    </head>
+
+<body>
+        <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contactus.html">Login</a></li>
+                <li><a href="us.html">Contact us</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search this website">
+                </div>
+            </ul>
+        </nav>
+        <div class="Right">
+            <img src="images/earth.jpg" alt="">
+        </div>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <br>
     <center>
         <marquee behavior="scroll" scrollamount="15" direction="random">
